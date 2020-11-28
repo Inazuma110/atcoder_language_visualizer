@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <CORSConfiguration>
+    <CORSRule>
+    <AllowedOrigin>*</AllowedOrigin>
+    <AllowedMethod>GET</AllowedMethod>
+    <MaxAgeSeconds>3000</MaxAgeSeconds>
+    <AllowedHeader>Authorization</AllowedHeader>
+    </CORSRule>
+    </CORSConfiguration>
 
     <title>Index</title>
   </head>
@@ -14,7 +24,6 @@
     <div id="app">
       {{ message }}
     </div>
-    <!-- <script src="json_data/dp_a_all.json"></script> -->
-    <!-- <script src="index.js"></script>                -->
+    <script src="index.js"></script>
   </body>
 </html>
