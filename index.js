@@ -18,7 +18,7 @@ var list = new Vue({
   },
   methods: {
     get_langs: function(event){
-      var path = `./public/${this.selected_prob['id']}_all.json`
+      var path = `./json_data/${this.selected_prob['id']}_all.json`
       axios.get(path)
         .then(response => {
           this.langs = response.data
