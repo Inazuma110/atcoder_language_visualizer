@@ -37,27 +37,22 @@ var list = new Vue({
       })
   },
   methods: {
-    get_langs: function(event){
+    get_langs: function(){
       if(!this.selected_prob){
         console.log("Error")
         return;
       }
       var path = `./json_data/${this.selected_prob['id']}_all.json`
+      // this.langs = {'a':1, 'b':2};
       axios.get(path)
         .then(response => {
           this.langs = response.data
         })
-      if(this.selected_prob && this.langs){
-        this.render()
-        return;
-      }
-      console.log("Error")
     },
 
     render: function(event){
       if(this.chart){ this.chart.destroy(); }
       var ctx = document.getElementById("myChart");
-      // this.langs = {'a':1, 'b':2};
       this.langs = dict_sort(this.langs)
       this.langs = parse_dict(this.langs)
       langs = Object.keys(this.langs)

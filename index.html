@@ -34,7 +34,7 @@
     </div>
 
     <div id="list">
-      <button type="button" class="btn btn-primary" @click="get_langs">Display</button>
+      <button type="button" class="btn btn-primary" @click="render">Display</button>
       {{ selected_prob }}
       {{ langs }}
       <table class="table">
@@ -48,13 +48,10 @@
         <tbody v-for="(prob, idx) in list">
           <tr>
             <td>
-              <input type="radio" :value="prob" v-model="selected_prob" >
+              <input type="radio" :value="prob" v-model="selected_prob" @change="get_langs()">
             </td>
             <td> {{ prob['contest_id'] }} </td>
             <td> {{ prob['title'] }} </td>
-            <!-- <td v-if="prob['id'] == selected_prob['id']"> -->
-            <!--   <canvas id="myChart"></canvas>              -->
-            <!-- </td>                                         -->
           </tr>
         </tbody>
       </table>
