@@ -27,12 +27,15 @@ var list = new Vue({
     },
     render: function(event){
       var ctx = document.getElementById("myChart");
+      // this.langs = {'a':1, 'b':2};
+      langs = Object.keys(this.langs)
+      vals = Object.values(this.langs)
       var chart = new Chart(ctx, {
         type: 'pie',
         data: {
-          labels: keys(this.langs),
+          labels: langs,
           datasets:[{
-            data: values(this.langs),
+            data: vals,
           }]
         },
       });
