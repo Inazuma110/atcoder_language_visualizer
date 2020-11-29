@@ -27,33 +27,42 @@ var list = new Vue({
     selected_prob: null,
     prob_id: null,
     idx: null,
-    langs: null,
+    langs: true,
+    chart: null,
   },
   mounted() {
     axios.get("https://kenkoooo.com/atcoder/resources/problems.json")
       .then(response => {
         this.list = response.data
-        this.selected_prob = this.list[0]
       })
   },
   methods: {
     get_langs: function(event){
+      if(!this.selected_prob){
+        console.log("Error")
+        return;
+      }
       var path = `./json_data/${this.selected_prob['id']}_all.json`
-      console.log(path);
       axios.get(path)
         .then(response => {
           this.langs = response.data
         })
-      this.render()
+      if(this.selected_prob && this.langs){
+        this.render()
+        return;
+      }
+      console.log("Error")
     },
+
     render: function(event){
+      if(this.chart){ this.chart.destroy(); }
       var ctx = document.getElementById("myChart");
       // this.langs = {'a':1, 'b':2};
       this.langs = dict_sort(this.langs)
       this.langs = parse_dict(this.langs)
       langs = Object.keys(this.langs)
       vals = Object.values(this.langs)
-      var chart = new Chart(ctx, {
+      this.chart = new Chart(ctx, {
         type: 'pie',
         data: {
           labels: langs,

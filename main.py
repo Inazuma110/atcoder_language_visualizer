@@ -29,7 +29,7 @@ for prob in tqdm(data):
     contest_name = prob['contest_id']
     prob2contest[name] = contest_name
 
-    all_subs = df[df['problem_id'] == 'abc184_e']
+    all_subs = df[df['problem_id'] == name]
     all_subs = all_subs[all_subs['result'] == 'AC']
     all_subs['epoch_second'].astype(int)
     if all_subs.empty:
