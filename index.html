@@ -11,6 +11,7 @@
 
     <script src="https://unpkg.com/vue-slide-up-down@1.0.2/dist/vue-slide-up-down.umd.js"></script>
 
+
     <title>AtCoder Analyzer</title>
   </head>
 
@@ -49,13 +50,14 @@
             </td>
             <td> {{ prob['contest_id'] }} </td>
             <td> {{ prob['title'] }} </td>
-            <td v-if="selected_prob && prob['id'] == selected_prob['id']">
-              {{ langs }}
-            </td>
+            <!-- <td v-if="prob['id'] == selected_prob['id']"> -->
+            <!--   <canvas id="myChart"></canvas>              -->
+            <!-- </td>                                         -->
           </tr>
         </tbody>
       </table>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/chartjs-plugin-colorschemes"></script>
   </body>
 </html>

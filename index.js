@@ -1,3 +1,24 @@
+function dict_sort(obj){
+  var items = Object.keys(obj).map(function(key) {
+    return [key, obj[key]];
+  });
+
+  // Sort the array based on the second element
+  items.sort(function(first, second) {
+    return second[1] - first[1];
+  });
+  return items;
+}
+
+function parse_dict(obj){
+  d = {"other": 0}
+  for(var i = 0; i < obj.length; i++){
+    if(i < 10) d[obj[i][0]] = obj[i][1];
+    else d["other"] += obj[i][1];
+  }
+  return d;
+}
+
 var list = new Vue({
   el: '#list',
   data: {
@@ -7,7 +28,6 @@ var list = new Vue({
     prob_id: null,
     idx: null,
     langs: null,
-    // prob_id: this.idx != -1 && this.list != undefined ? this.list[this.idx] : null,
   },
   mounted() {
     axios.get("https://kenkoooo.com/atcoder/resources/problems.json")
@@ -28,6 +48,9 @@ var list = new Vue({
     render: function(event){
       var ctx = document.getElementById("myChart");
       // this.langs = {'a':1, 'b':2};
+      this.langs = dict_sort(this.langs)
+      this.langs = parse_dict(this.langs)
+      console.log(this.langs)
       langs = Object.keys(this.langs)
       vals = Object.values(this.langs)
       var chart = new Chart(ctx, {
@@ -38,6 +61,13 @@ var list = new Vue({
             data: vals,
           }]
         },
+        options: {
+          plugins: {
+            colorschemes:{
+              scheme: 'brewer.Paired12'
+            }
+          }
+        }
       });
     },
   }
