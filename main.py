@@ -48,6 +48,7 @@ for prob in tqdm(data):
     contest_subs = all_subs[all_subs['epoch_second'] <= end_time]
     if contest_subs.empty:
         continue
+    print(contest_subs)
 
     contest_langs = set(contest_subs['language'])
     contest_langs_hist = dict()

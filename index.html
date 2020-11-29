@@ -4,25 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <CORSConfiguration>
-    <CORSRule>
-    <AllowedOrigin>*</AllowedOrigin>
-    <AllowedMethod>GET</AllowedMethod>
-    <MaxAgeSeconds>3000</MaxAgeSeconds>
-    <AllowedHeader>Authorization</AllowedHeader>
-    </CORSRule>
-    </CORSConfiguration>
+    <script src="https://unpkg.com/vue-slide-up-down@1.0.2/dist/vue-slide-up-down.umd.js"></script>
 
-    <title>Index</title>
+    <title>AtCoder Analyzer</title>
   </head>
 
   <body>
     ya!
+    <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
     <div id="app">
       {{ message }}
+    </div>
+
+    <div id="is_all">
+      <input type="checkbox" id="is_all" v-model="is_all">
+      <label for="checkbox">
+        All
+        {{ is_all }}
+      </label>
+    </div>
+
+    <div id="list">
+      {{ selected_prob }}
+      {{ langs }}
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Radio box</th>
+            <th>Contest</th>
+            <th>Title</th>
+          </tr>
+        </thead>
+        <tbody v-for="(prob, idx) in list">
+          <tr>
+            <td>
+              <input type="radio" :value="prob" v-model="selected_prob" @click="get_langs">
+            </td>
+            <td> {{ prob['contest_id'] }} </td>
+            <td> {{ prob['title'] }} </td>
+            <td v-if="selected_prob && prob['id'] == selected_prob['id']">
+              {{ langs }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <script src="index.js"></script>
   </body>
