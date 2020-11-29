@@ -17,6 +17,7 @@
 
   <body>
     ya!
+
     <canvas id="myChart"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
@@ -33,6 +34,7 @@
     </div>
 
     <div id="list">
+      <button @click="get_langs">Display</button>
       {{ selected_prob }}
       {{ langs }}
       <table class="table">
@@ -46,7 +48,7 @@
         <tbody v-for="(prob, idx) in list">
           <tr>
             <td>
-              <input type="radio" :value="prob" v-model="selected_prob" @click="get_langs">
+              <input type="radio" :value="prob" v-model="selected_prob" >
             </td>
             <td> {{ prob['contest_id'] }} </td>
             <td> {{ prob['title'] }} </td>

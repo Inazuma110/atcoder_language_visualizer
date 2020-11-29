@@ -39,6 +39,7 @@ var list = new Vue({
   methods: {
     get_langs: function(event){
       var path = `./json_data/${this.selected_prob['id']}_all.json`
+      console.log(path);
       axios.get(path)
         .then(response => {
           this.langs = response.data
@@ -50,7 +51,6 @@ var list = new Vue({
       // this.langs = {'a':1, 'b':2};
       this.langs = dict_sort(this.langs)
       this.langs = parse_dict(this.langs)
-      console.log(this.langs)
       langs = Object.keys(this.langs)
       vals = Object.values(this.langs)
       var chart = new Chart(ctx, {
