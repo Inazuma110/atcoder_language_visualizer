@@ -34,14 +34,12 @@
     <div id="list">
 
       Fuzzy Search
-      <input type="text" class="form-control" placeholder="Problem" aria-label="" aria-describedby="basic-addon1" v-model=query>
+      <input type="text" class="form-control" placeholder="Problem or Contest" aria-label="" aria-describedby="basic-addon1" v-model=query>
       <div class="input-group-append">
         <button class="btn btn-success" type="button" @click="search">Search</button>
       </div>
 
       <button type="button" class="btn btn-primary" @click="render">Display</button>
-      {{ selected_prob }}
-      {{ langs }}
       <table class="table">
         <thead>
           <tr>
@@ -53,7 +51,7 @@
         <tbody v-for="(prob, idx) in filtered_list">
           <tr>
             <td>
-              <input type="radio" :value="prob" v-model="selected_prob" @change="get_langs()">
+              <input type="radio" :value="prob.item" v-model="selected_prob" @change="get_langs()">
             </td>
             <td> {{ prob.item['contest_id'] }} </td>
             <td> {{ prob.item['title'] }} </td>

@@ -51,7 +51,6 @@ var list = new Vue({
       var fuse = new Fuse(this.list, options);
       var res = fuse.search(this.query);
       this.filtered_list = res;
-      console.log(Object.keys(this.filtered_list[0].item));
     },
     get_langs: function(){
       if(!this.selected_prob){
