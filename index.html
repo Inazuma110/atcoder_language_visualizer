@@ -20,7 +20,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <div id="app">
-      <!-- {{ message }} -->
     </div>
 
 
@@ -34,7 +33,7 @@
 
       <button type="button" class="btn btn-primary" @click="render">Display</button>
 
-      <input type="checkbox" id="list" v-model="is_only_contest">
+      <input type="checkbox" id="list" v-model="is_only_contest" @change="get_langs()">
       <label for="checkbox">
         Only submissions in contest.
       </label>
