@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.3"></script>
 
     <script src="https://unpkg.com/vue-slide-up-down@1.0.2/dist/vue-slide-up-down.umd.js"></script>
 
@@ -16,13 +16,11 @@
   </head>
 
   <body>
-    ya!
-
     <canvas id="myChart"></canvas>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <div id="app">
-      {{ message }}
+      <!-- {{ message }} -->
     </div>
 
     <div id="is_all">
@@ -34,6 +32,13 @@
     </div>
 
     <div id="list">
+
+      Fuzzy Search
+      <input type="text" class="form-control" placeholder="Problem" aria-label="" aria-describedby="basic-addon1" v-model=query>
+      <div class="input-group-append">
+        <button class="btn btn-success" type="button" @click="search">Search</button>
+      </div>
+
       <button type="button" class="btn btn-primary" @click="render">Display</button>
       {{ selected_prob }}
       {{ langs }}
@@ -45,13 +50,13 @@
             <th>Title</th>
           </tr>
         </thead>
-        <tbody v-for="(prob, idx) in list">
+        <tbody v-for="(prob, idx) in filtered_list">
           <tr>
             <td>
               <input type="radio" :value="prob" v-model="selected_prob" @change="get_langs()">
             </td>
-            <td> {{ prob['contest_id'] }} </td>
-            <td> {{ prob['title'] }} </td>
+            <td> {{ prob.item['contest_id'] }} </td>
+            <td> {{ prob.item['title'] }} </td>
           </tr>
         </tbody>
       </table>

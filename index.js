@@ -19,11 +19,13 @@ function parse_dict(obj){
   return d;
 }
 
+
 var list = new Vue({
   el: '#list',
   data: {
     list: null,
-    active: false,
+    filtered_list: null,
+    query: null,
     selected_prob: null,
     prob_id: null,
     idx: null,
@@ -37,13 +39,26 @@ var list = new Vue({
       })
   },
   methods: {
+    search: function(){
+      var options = {
+        threshold: 0.1,
+        keys: [
+          "id",
+          "contet_id",
+          "title",
+        ]
+      };
+      var fuse = new Fuse(this.list, options);
+      var res = fuse.search(this.query);
+      this.filtered_list = res;
+      console.log(Object.keys(this.filtered_list[0].item));
+    },
     get_langs: function(){
       if(!this.selected_prob){
         console.log("Error")
         return;
       }
       var path = `./json_data/${this.selected_prob['id']}_all.json`
-      // this.langs = {'a':1, 'b':2};
       axios.get(path)
         .then(response => {
           this.langs = response.data
@@ -74,7 +89,10 @@ var list = new Vue({
         }
       });
     },
-  }
+  },
+  components: {
+    list,
+  },
 })
 
 var is_all = new Vue({
