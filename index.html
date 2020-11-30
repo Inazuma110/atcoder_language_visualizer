@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -16,48 +17,68 @@
   </head>
 
   <body>
-    <canvas id="myChart"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>AtCoder Problem Analyzer</h1>
+        <hr>
+        提出されたプログラムの言語の割合を可視化するサイトです．
+        ソースコードは
+        <a href="https://github.com/Inazuma110/ac_prob_analysis" target="_blank">
+          こちら
+        </a>
+      </div>
+      <canvas id="myChart"></canvas>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-    <div id="app">
-    </div>
-
-
-    <div id="list">
-
-      Fuzzy Search
-      <input type="text" class="form-control" placeholder="Problem or Contest" aria-label="" aria-describedby="basic-addon1" v-model=query>
-      <div class="input-group-append">
-        <button class="btn btn-success" type="button" @click="search">Search</button>
+      <div id="app">
       </div>
 
-      <button type="button" class="btn btn-primary" @click="render">Display</button>
 
-      <input type="checkbox" id="list" v-model="is_only_contest" @change="get_langs()">
-      <label for="checkbox">
-        Only submissions in contest.
-      </label>
+      <div id="list">
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Radio box</th>
-            <th>Contest</th>
-            <th>Title</th>
-          </tr>
-        </thead>
-        <tbody v-for="(prob, idx) in filtered_list">
-          <tr>
-            <td>
-              <input type="radio" :value="prob.item" v-model="selected_prob" @change="get_langs()">
-            </td>
-            <td> {{ prob.item['contest_id'] }} </td>
-            <td> {{ prob.item['title'] }} </td>
-          </tr>
-        </tbody>
-      </table>
+        Fuzzy Search
+        <input type="text" class="form-control" placeholder="Problem or Contest" aria-label="" aria-describedby="basic-addon1" v-model=query>
+        <div class="input-group-append">
+          <button class="btn btn-success" type="button" @click="search">Search</button>
+        </div>
+
+        <button type="button" class="btn btn-primary" @click="render">Display</button>
+
+        <input type="checkbox" id="list" v-model="is_only_contest" @change="get_langs()">
+        <label for="checkbox">
+          Only submissions in contest.
+        </label>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Radio box</th>
+              <th>Contest</th>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody v-for="(prob, idx) in filtered_list">
+            <tr>
+              <td>
+                <input type="radio" :value="prob.item" v-model="selected_prob" @change="get_langs()">
+              </td>
+              <td> {{ prob.item['contest_id'] }} </td>
+              <td> {{ prob.item['title'] }} </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr>
+      <div text-align="right">
+        <p style="text-align:center">&copy; 2020
+        <a href="https://github.com/Inazuma110" target="_blank">
+          Inazuma110
+        </a>
+        </p>
     </div>
-    <script src="index.js"></script>
-    <script src="https://unpkg.com/chartjs-plugin-colorschemes"></script>
+
+      <script src="index.js"></script>
+      <script src="https://unpkg.com/chartjs-plugin-colorschemes"></script>
   </body>
 </html>

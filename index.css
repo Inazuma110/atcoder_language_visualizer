@@ -1,0 +1,28 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.jumbotron{
+  margin-top:2rem;
+}
+
+a {
+  color: #42b983;
+}
+
+a:hover{
+  color: #008080;
+}
+
+.card-deck{
+  margin-bottom:3rem;
+}
+
+
+section{
+  margin-top:5rem;
+  margin-bottom:5rem;
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
