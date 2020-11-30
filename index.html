@@ -23,13 +23,6 @@
       <!-- {{ message }} -->
     </div>
 
-    <div id="is_all">
-      <input type="checkbox" id="is_all" v-model="is_all">
-      <label for="checkbox">
-        All
-        {{ is_all }}
-      </label>
-    </div>
 
     <div id="list">
 
@@ -40,6 +33,12 @@
       </div>
 
       <button type="button" class="btn btn-primary" @click="render">Display</button>
+
+      <input type="checkbox" id="list" v-model="is_only_contest">
+      <label for="checkbox">
+        Only submissions in contest.
+      </label>
+
       <table class="table">
         <thead>
           <tr>

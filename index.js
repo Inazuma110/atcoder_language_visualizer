@@ -27,10 +27,9 @@ var list = new Vue({
     filtered_list: null,
     query: null,
     selected_prob: null,
-    prob_id: null,
-    idx: null,
     langs: true,
     chart: null,
+    is_only_contest: false,
   },
   mounted() {
     axios.get("https://kenkoooo.com/atcoder/resources/problems.json")
@@ -57,7 +56,12 @@ var list = new Vue({
         console.log("Error")
         return;
       }
-      var path = `./json_data/${this.selected_prob['id']}_all.json`
+
+      var path = "";
+      if(!this.is_only_contest)
+        path = `./json_data/${this.selected_prob['id']}_all.json`
+      else
+        path = `./json_data/${this.selected_prob['id']}_contest.json`
       axios.get(path)
         .then(response => {
           this.langs = response.data
@@ -91,13 +95,6 @@ var list = new Vue({
   },
   components: {
     list,
-  },
-})
-
-var is_all = new Vue({
-  el: '#is_all',
-  data: {
-    is_all: true,
   },
 })
 
