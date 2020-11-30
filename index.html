@@ -27,10 +27,12 @@
         <h1>AtCoder Language Analyzer</h1>
         <hr>
         提出されたプログラムの言語の割合を可視化するサイトです．
+        <br>
         ソースコードは
         <a href="https://github.com/Inazuma110/atcoder_language_analyzer" target="_blank">
           こちら
         </a>
+        です．IssueやPRお待ちしてます．
       </div>
       <canvas id="myChart"></canvas>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -42,9 +44,11 @@
       <div id="list">
 
         Fuzzy Search
-        <input type="text" class="form-control" placeholder="Problem or Contest" aria-label="" aria-describedby="basic-addon1" v-model=query>
-        <div class="input-group-append">
-          <button class="btn btn-success" type="button" @click="search">Search</button>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Problem or Contest" aria-label="" aria-describedby="basic-addon1" v-model=query>
+          <div class="input-group-append">
+            <button class="btn btn-success" type="button" @click="search">Search</button>
+          </div>
         </div>
 
         <button type="button" class="btn btn-primary" @click="render">Display</button>
