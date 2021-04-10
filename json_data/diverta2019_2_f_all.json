@@ -1,1 +1,1 @@
-{"C (GCC 5.4.1)": 1, "C++ (GCC 9.2.1)": 18, "C++14 (Clang 3.8.0)": 1, "Java8 (OpenJDK 1.8.0)": 3, "PyPy3 (2.4.0)": 2, "Fortran (gfortran v4.8.4)": 12, "C++14 (GCC 5.4.1)": 103, "Rust (1.15.1)": 2, "Python3 (3.4.3)": 3}
+{"Rust (1.15.1)": 2, "C (GCC 5.4.1)": 1, "C++14 (GCC 5.4.1)": 103, "C++14 (Clang 3.8.0)": 1, "PyPy3 (2.4.0)": 2, "Rust (1.42.0)": 1, "Fortran (gfortran v4.8.4)": 12, "C++ (GCC 9.2.1)": 23, "Java8 (OpenJDK 1.8.0)": 3, "Python3 (3.4.3)": 3}

@@ -1,1 +1,1 @@
-{"Java (OpenJDK 1.7.0)": 19, "Ruby (1.9.3)": 7, "C (GCC 4.6.4)": 5, "JavaScript (Node.js 0.6.12)": 1, "Haskell (GHC 7.4.1)": 6, "C++ (G++ 4.6.4)": 67, "C++11 (GCC 4.8.1)": 21, "D (DMD 2.060)": 1, "Python (2.7.3)": 11, "Python3 (3.2.3)": 3, "C# (Mono 2.10.8.1)": 6}
+{"C (GCC 4.6.4)": 5, "C# (Mono 2.10.8.1)": 6, "D (DMD 2.060)": 1, "Python (2.7.3)": 11, "Java (OpenJDK 1.7.0)": 19, "JavaScript (Node.js 0.6.12)": 1, "Haskell (GHC 7.4.1)": 6, "C++11 (GCC 4.8.1)": 21, "Python3 (3.2.3)": 3, "C++ (G++ 4.6.4)": 67, "Ruby (1.9.3)": 7}

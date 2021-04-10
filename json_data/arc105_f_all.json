@@ -1,1 +1,1 @@
-{"C++ (GCC 9.2.1)": 131, "D (LDC 1.20.1)": 2, "C++ (Clang 10.0.0)": 6, "Python (3.8.2)": 1, "Java (OpenJDK 1.8.0)": 3, "Java (OpenJDK 11.0.6)": 5, "PyPy3 (7.3.0)": 4, "Rust (1.42.0)": 2}
+{"Java (OpenJDK 1.8.0)": 3, "Java (OpenJDK 11.0.6)": 6, "D (LDC 1.20.1)": 2, "C++ (Clang 10.0.0)": 7, "Rust (1.42.0)": 3, "PyPy3 (7.3.0)": 5, "C++ (GCC 9.2.1)": 152, "Python (3.8.2)": 1}

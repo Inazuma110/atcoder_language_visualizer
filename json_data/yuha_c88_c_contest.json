@@ -1,1 +1,1 @@
-{"C (GCC 4.9.2)": 3, "Java (OpenJDK 1.7.0)": 7, "Python3 (3.4.2)": 1, "C++14 (Clang++ 3.4)": 2, "Java8 (OpenJDK 1.8.0)": 1, "C++ (GCC 4.9.2)": 24, "C++11 (GCC 4.9.2)": 27, "Haskell (Haskell Platform 2014.2.0.0)": 1, "C++ (Clang++ 3.4)": 1, "Python (2.7.3)": 1}
+{"C++11 (GCC 4.9.2)": 27, "C++ (GCC 4.9.2)": 24, "Python3 (3.4.2)": 1, "C++14 (Clang++ 3.4)": 2, "Haskell (Haskell Platform 2014.2.0.0)": 1, "C++ (Clang++ 3.4)": 1, "Java (OpenJDK 1.7.0)": 7, "Python (2.7.3)": 1, "Java8 (OpenJDK 1.8.0)": 1, "C (GCC 4.9.2)": 3}
