@@ -1,1 +1,1 @@
-{"Perl (v5.18.2)": 5, "C# (Mono 4.6.2.0)": 3, "Rust (1.15.1)": 2, "C (GCC 5.4.1)": 8, "C++14 (GCC 5.4.1)": 75, "Ruby (2.3.3)": 2, "C++14 (Clang 3.8.0)": 2, "JavaScript (node.js v5.12)": 1, "PyPy3 (2.4.0)": 4, "Java8 (OpenJDK 1.8.0)": 4, "Python3 (3.4.3)": 4}
+{"C++14 (GCC 5.4.1)": 75, "C (GCC 5.4.1)": 8, "C# (Mono 4.6.2.0)": 3, "PyPy3 (2.4.0)": 4, "JavaScript (node.js v5.12)": 1, "Rust (1.15.1)": 2, "Java8 (OpenJDK 1.8.0)": 4, "C++14 (Clang 3.8.0)": 2, "Ruby (2.3.3)": 2, "Python3 (3.4.3)": 4, "Perl (v5.18.2)": 5}

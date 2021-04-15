@@ -1,1 +1,1 @@
-{"C++ (GCC 4.4.7)": 3, "C++14 (GCC 5.4.1)": 7, "Java (OpenJDK 1.7.0)": 1, "C++ (Clang 10.0.0)": 1, "Common Lisp (SBCL 1.1.14)": 1, "C++11 (GCC 4.8.1)": 5, "C++ (GCC 9.2.1)": 1, "Java8 (OpenJDK 1.8.0)": 2}
+{"C++14 (GCC 5.4.1)": 7, "Common Lisp (SBCL 1.1.14)": 1, "C++ (GCC 9.2.1)": 1, "Java (OpenJDK 1.7.0)": 1, "Java8 (OpenJDK 1.8.0)": 2, "C++ (Clang 10.0.0)": 1, "C++11 (GCC 4.8.1)": 5, "C++ (GCC 4.4.7)": 3}

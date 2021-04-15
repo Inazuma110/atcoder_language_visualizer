@@ -1,1 +1,1 @@
-{"Java (OpenJDK 1.8.0)": 1, "D (DMD 2.091.0)": 1, "C (GCC 9.2.1)": 2, "C# (.NET Core 3.1.201)": 1, "Nim (1.0.6)": 1, "Lua (Lua 5.3.5)": 1, "Common Lisp (SBCL 2.0.3)": 1, "Rust (1.42.0)": 1, "PyPy3 (7.3.0)": 7, "C++ (GCC 9.2.1)": 66, "Python (3.8.2)": 6, "Octave (5.2.0)": 4}
+{"C# (.NET Core 3.1.201)": 1, "Nim (1.0.6)": 1, "Octave (5.2.0)": 4, "C++ (GCC 9.2.1)": 66, "Rust (1.42.0)": 1, "Python (3.8.2)": 6, "Lua (Lua 5.3.5)": 1, "C (GCC 9.2.1)": 2, "PyPy3 (7.3.0)": 7, "Common Lisp (SBCL 2.0.3)": 1, "D (DMD 2.091.0)": 1, "Java (OpenJDK 1.8.0)": 1}

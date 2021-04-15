@@ -1,1 +1,1 @@
-{"C (GCC 9.2.1)": 1, "C++14 (GCC 5.4.1)": 201, "C++ (GCC 5.4.1)": 27, "D (LDC 1.20.1)": 1, "Java7 (OpenJDK 1.7.0)": 1, "PyPy3 (2.4.0)": 3, "D (LDC 0.17.0)": 1, "C++ (Clang 10.0.0)": 8, "Fortran (gfortran v4.8.4)": 1, "C++ (GCC 9.2.1)": 100, "Java8 (OpenJDK 1.8.0)": 2, "Python3 (3.4.3)": 1}
+{"Fortran (gfortran v4.8.4)": 1, "Java7 (OpenJDK 1.7.0)": 1, "C++14 (GCC 5.4.1)": 201, "C++ (GCC 9.2.1)": 100, "C++ (GCC 5.4.1)": 27, "D (LDC 1.20.1)": 1, "PyPy3 (2.4.0)": 3, "Java8 (OpenJDK 1.8.0)": 2, "D (LDC 0.17.0)": 1, "C (GCC 9.2.1)": 1, "C++ (Clang 10.0.0)": 8, "Python3 (3.4.3)": 1}
