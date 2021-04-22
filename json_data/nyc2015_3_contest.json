@@ -1,1 +1,1 @@
-{"C (GCC 4.6.4)": 1, "C# (Mono 2.10.8.1)": 2, "D (DMD 2.060)": 1, "Python (2.7.3)": 2, "Visual Basic (Mono 2.10.8)": 1, "Java (OpenJDK 1.7.0)": 9, "Haskell (GHC 7.4.1)": 4, "C++11 (GCC 4.8.1)": 33, "Python3 (3.2.3)": 1, "C++ (G++ 4.6.4)": 34, "Ruby (1.9.3)": 3}
+{"C (GCC 4.6.4)": 1, "Python (2.7.3)": 2, "Visual Basic (Mono 2.10.8)": 1, "Java (OpenJDK 1.7.0)": 9, "D (DMD 2.060)": 1, "Haskell (GHC 7.4.1)": 4, "C++ (G++ 4.6.4)": 34, "C# (Mono 2.10.8.1)": 2, "Ruby (1.9.3)": 3, "C++11 (GCC 4.8.1)": 33, "Python3 (3.2.3)": 1}

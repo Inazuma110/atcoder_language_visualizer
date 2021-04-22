@@ -1,1 +1,1 @@
-{"Nim (0.13.0)": 1, "C++14 (Clang 3.8.0)": 3, "C++14 (GCC 5.4.1)": 47, "JavaScript (node.js v5.12)": 1, "PyPy3 (2.4.0)": 2, "Pascal (FPC 2.6.2)": 1, "Java8 (OpenJDK 1.8.0)": 2, "Python3 (3.4.3)": 8}
+{"C++14 (GCC 5.4.1)": 47, "PyPy3 (2.4.0)": 2, "JavaScript (node.js v5.12)": 1, "Java8 (OpenJDK 1.8.0)": 2, "C++14 (Clang 3.8.0)": 3, "Nim (0.13.0)": 1, "Python3 (3.4.3)": 8, "Pascal (FPC 2.6.2)": 1}

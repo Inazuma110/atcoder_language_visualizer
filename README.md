@@ -1,4 +1,7 @@
 # AtCoder Language Visualizer
-ブラウザでindex.htmlを開くだけ
+ブラウザでindex.htmlを開くだけです．
 
-main.pyを実行すると提出されたファイルを取得し直します．
+update_data.pyを実行すると提出されたファイルを取得し直します．
+木曜日に自動で更新されます．
+
+[AtCoder Problems](https://kenkoooo.com/atcoder/#/table/)の[APIとデータセット](https://github.com/kenkoooo/AtCoderProblems/blob/master/doc/api.md)を使わせて頂いています．

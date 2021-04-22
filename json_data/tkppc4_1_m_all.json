@@ -1,1 +1,1 @@
-{"C# (Mono 4.6.2.0)": 1, "Rust (1.15.1)": 2, "C (GCC 5.4.1)": 1, "C++14 (GCC 5.4.1)": 56, "C++14 (Clang 3.8.0)": 1, "C# (.NET Core 3.1.201)": 1, "JavaScript (node.js v5.12)": 1, "PyPy3 (2.4.0)": 2, "Scala (2.11.7)": 1, "C++ (GCC 9.2.1)": 1, "Java8 (OpenJDK 1.8.0)": 2, "Python3 (3.4.3)": 4}
+{"C# (.NET Core 3.1.201)": 1, "C++14 (GCC 5.4.1)": 56, "C (GCC 5.4.1)": 1, "C# (Mono 4.6.2.0)": 1, "PyPy3 (2.4.0)": 2, "JavaScript (node.js v5.12)": 1, "Rust (1.15.1)": 2, "Java8 (OpenJDK 1.8.0)": 2, "C++14 (Clang 3.8.0)": 1, "C++ (GCC 9.2.1)": 1, "Scala (2.11.7)": 1, "Python3 (3.4.3)": 4}

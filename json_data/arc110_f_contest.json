@@ -1,1 +1,1 @@
-{"Java (OpenJDK 1.8.0)": 1, "Go (1.14.1)": 1, "Java (OpenJDK 11.0.6)": 1, "C++ (Clang 10.0.0)": 3, "PyPy3 (7.3.0)": 3, "C++ (GCC 9.2.1)": 60, "Python (3.8.2)": 1}
+{"Go (1.14.1)": 1, "Python (3.8.2)": 1, "C++ (GCC 9.2.1)": 60, "C++ (Clang 10.0.0)": 3, "PyPy3 (7.3.0)": 3, "Java (OpenJDK 11.0.6)": 1, "Java (OpenJDK 1.8.0)": 1}

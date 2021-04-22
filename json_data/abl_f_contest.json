@@ -1,1 +1,1 @@
-{"Nim (1.0.6)": 2, "Java (OpenJDK 11.0.6)": 4, "C++ (Clang 10.0.0)": 1, "Rust (1.42.0)": 3, "PyPy3 (7.3.0)": 2, "C++ (GCC 9.2.1)": 35, "C++ (GCC 9.2.1 with AC Library v1.1)": 26}
+{"Nim (1.0.6)": 2, "C++ (GCC 9.2.1 with AC Library v1.1)": 26, "C++ (GCC 9.2.1)": 35, "Rust (1.42.0)": 3, "C++ (Clang 10.0.0)": 1, "PyPy3 (7.3.0)": 2, "Java (OpenJDK 11.0.6)": 4}
