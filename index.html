@@ -24,16 +24,22 @@
 
   <body>
     <div class="container">
+
       <div class="jumbotron">
         <h1>AtCoder Language Visualizer</h1>
         <hr>
         提出されたプログラムの言語の割合を可視化するサイトです．
+        毎週木曜日に，データが自動で更新されます．
         <br>
         ソースコードは
         <a href="https://github.com/Inazuma110/atcoder_language_visualizer" target="_blank">
           こちら
         </a>
         です．IssueやPRお待ちしてます．
+        <div class="alert alert-warning" role="alert">
+          <strong>アナウンス：</strong>現在，サーバーの設置箇所近辺で停電が不定期的に起こっているので，自動更新が一時的に止まる可能性があります．
+        </div>
+
       </div>
       <canvas id="myChart"></canvas>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -52,12 +58,16 @@
           </div>
         </div>
 
-        <button type="button" class="btn btn-primary" @click="render">Display</button>
+        <div class="display-option">
+          <input type="checkbox" id="list" v-model="is_only_contest" @change="get_langs()">
+          <label for="checkbox">
+            Only submissions in contest.
+          </label>
 
-        <input type="checkbox" id="list" v-model="is_only_contest" @change="get_langs()">
-        <label for="checkbox">
-          Only submissions in contest.
-        </label>
+          <br>
+
+          <button type="button" class="btn btn-primary" @click="render">Display</button>
+        </div>
 
         <table class="table">
           <thead>
